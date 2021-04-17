@@ -1,0 +1,112 @@
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.home::before,
+.home::after{
+    content: '';
+    position: absolute;
+    top: 1rem; left: -6rem;
+    background: var(--yellow);
+    border-radius: 3rem;
+    transform: rotate(-140deg);
+    height: 40rem;
+    width: 70rem;
+    z-index: -2;
+    animation: animate 1s linear 1;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(-45deg) translateY(-40rem);
+    }
+}
+
+.home::before{
+    top: -11rem;
+    background: #fff;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.1);
+    z-index: -1;
+}
+
+/*
+default: flex: 1 1 0;
+
+flex: 1 means the following:
+flex-grow : 1;    ➜ The div will grow in same proportion as the window-size       
+flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size 
+flex-basis : 0;   ➜ The div does not have a starting value as such and will 
+                     take up screen as per the screen size available for
+                     e.g:- if 3 divs are in the wrapper then each div will take 33%.
+
+*/
+
+.home .image{
+    flex: 1 1 39rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 39rem;
+}
+
+.home .content h3{
+    color: #333;
+    font-size: 6rem;
+}
+
+.home .content p{
+    color: #666;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+/* media queries */
+
+@media (min-width: 2500px){
+    .home::before,
+    .home::after{
+        display: none;
+    }
+}
+@media (min-height: 1000px){
+    .home::before,
+    .home::after{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .home::before,
+    .home::after{
+        display: none;
+    }
+}
+
+@media (max-width: 160px){
+    .image{
+        margin-top: 20px;
+    }
+}

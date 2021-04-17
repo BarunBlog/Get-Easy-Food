@@ -1,0 +1,100 @@
+:root{
+    --yellow: #fac935;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+h1, h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+    background: var(--yellow);
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: rgb(29, 29, 29);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:#666;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem 10%;
+    padding-top: 8.5rem;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding: .7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    border: .2rem solid var(--yellow);
+}
+
+.btn:hover{
+    background: var(--yellow);
+}
+
+
+
+/* media queries */
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+}
+
+
+
+
+@media (max-width: 500px){
+    
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media (max-width: 300px){
+    
+    html{
+        font-size: 40%;
+    }
+    
+}

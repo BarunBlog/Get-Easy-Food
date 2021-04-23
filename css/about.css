@@ -1,0 +1,96 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .animated_svg{
+    flex: 1 1 40rem;
+    height: auto;
+    /*height: 50rem;
+    background: url(../images/about-frame-img.png), url(../images/about-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;*/
+}
+
+.about .animated_svg svg{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#Steam1, #Steam2, #Steam3{
+
+    animation: steam 4s infinite;
+    fill: rgb(170, 170, 187);
+}
+#Steam1{
+    animation-timing-function: linear;
+}
+#Steam2{
+    animation-timing-function: ease-in;
+}
+#Steam3{
+    animation-timing-function: ease;
+}
+
+
+@keyframes steam {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+
+#HandleAndHand {
+    animation: handle_and_hand 2s infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes handle_and_hand {
+    0%{
+        transform: rotate(10deg);
+    }
+    70%{
+        transform: rotate(-13deg);
+    }
+}
+
+#Handle{
+    animation: handle 4s infinite alternate-reverse;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes handle {
+    0%{
+        transform: rotate(-50deg);
+    }
+    70%{
+        transform: rotate(40deg);
+    }
+}
+
+.about .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .content h3{
+    font-size: 4rem;
+    color: #333;
+}
+
+.about .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}

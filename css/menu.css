@@ -1,0 +1,80 @@
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 .5rem;
+    color: #333;
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+.menu .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 2rem 0;
+    border-top: .3rem dashed rgba(0, 0, 0, .2);
+    border-bottom: .3rem dashed rgba(0, 0, 0, .2);
+}
+
+.menu .list .btn{
+    margin: 1rem;
+}
+
+.menu .list .btn.active,
+.menu .list .btn:hover{
+    background: var(--yellow);
+    color: #fff;
+}
+
+.menu .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu .row .image{
+    margin: 2rem;
+    padding: 2rem;
+    flex: 1 1 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.menu .row .image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.menu .row .content{
+    flex: 1 1 40rem;
+}
+
+.menu .row .content .info{
+    padding: 1rem 0;
+}
+
+.menu .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.menu .row .content .info h3 span{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.menu .row .content .info p{
+    padding: 1rem 0;
+    padding-left: 4.5rem;
+    font-size: 1.5rem;
+    color: #666;
+}

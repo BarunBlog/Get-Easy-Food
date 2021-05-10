@@ -1,0 +1,159 @@
+.popular{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../images/popular-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular .box-container .inner-container{
+    perspective: 600px;
+    display: flex;
+    width: 45rem;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.card{
+    transform-style: preserve-3d;
+    background: #fff;
+    width: 35rem;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,.2), 0 0 2rem rgba(0,0,0,.2);
+    align-items: center;
+    
+}
+
+.card .dish{
+    width: 97%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .dish .circle{
+    width: 17rem;
+    height: 17rem;
+    background: linear-gradient(
+        to right,
+        rgba(217, 245, 60, 0.75),
+        rgba(8, 83, 156, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.card .dish img{
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.card .info h3{
+    color: #333;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.card .info .stars i{
+    color: var(--yellow);
+    font-size: 2rem;
+    padding: 1rem .1rem;
+}
+
+.card .info .description{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1.5rem 0rem;
+    font-weight: 500;
+}
+
+.card .info .price{
+    color: #666;
+    font-size: 1.8rem;
+    padding: .5rem 0rem;
+    font-weight: 500;
+}
+
+.card .info .order{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.card .info .order .btn{
+    width: 60%;
+}
+
+
+/* media queries */
+@media (max-width: 330px){
+    
+    .popular .box-container .inner-container{
+        width: 44rem;
+    }
+    
+    .card{
+        width: 34rem; 
+    }
+}
+@media (max-width: 300px){
+    
+    .card .dish{
+        height: 200px; 
+    }
+}
+
+@media (max-width: 260px){
+    .popular .box-container .inner-container{
+        width: 40rem;
+    }
+    
+    .card{
+        width: 30rem; 
+    }
+
+    .card .dish{
+        height: 170px; 
+    }
+}
+
+@media (max-width: 205px){
+    .popular .box-container .inner-container{
+        width: 35rem;
+    }
+    
+    .card{
+        width: 25rem; 
+    }
+}
+
+@media (max-width: 175px){
+    .popular .box-container .inner-container{
+        width: 32rem;
+    }
+    
+    .card{
+        width: 22rem; 
+    }
+
+    .card .info h3, .card .info .stars, .card .info .price{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}

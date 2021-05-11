@@ -1,0 +1,68 @@
+.make_order{
+    background: url(../images/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.make_order .row{
+    display: flex;
+    background: #fff;
+    margin: 2rem 0;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: 1rem;
+}
+
+.make_order .row .image{
+    flex: 1 1 40%;
+}
+
+.make_order .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.make_order .row form{
+    flex: 1 1 60%;
+    background: #fff;
+    padding: 2rem;
+}
+
+.make_order .row form .box{
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: none;
+    background: #f0f0f0;
+    width: 100%;
+}
+
+.make_order .row form .box:focus{
+    border: 1px solid var(--yellow);
+}
+
+.make_order .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.make_order .row form .address{
+    resize: none;
+    height: 15rem;
+}
+
+
+/* media queries */
+
+@media (max-width: 768px){
+    .make_order .row .image{
+        display: none;
+    }
+}
+
+@media (max-width: 160px){
+    .make_order .row form .box{
+        width: 90%;
+    }
+}

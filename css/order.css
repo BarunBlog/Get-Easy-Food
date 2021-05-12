@@ -40,7 +40,7 @@
 }
 
 .make_order .row form .box:focus{
-    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
 }
 
 .make_order .row form .box::placeholder{

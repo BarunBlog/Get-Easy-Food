@@ -34,7 +34,6 @@ for(let element=0; element<ln; element++){
     // Animate In
     card_elements[element].addEventListener('mouseenter', e => {
         card_elements[element].style.transition = "none";
-        console.log(header_elements[element]);
 
         // Popout
         header_elements[element].style.transform = `translateZ(100px)`;

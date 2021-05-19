@@ -14,7 +14,7 @@ $(document).ready(function(){
 
         $('section').each(function(){
             let top = $(window).scrollTop(); // Top position of scrollbar
-            let offset = $(this).offset().top - 200; // top position of the offset coordinates
+            let offset = $(this).offset().top - 250; // top position of the offset coordinates
             let height = $(this).height(); // height of the current element 
             let id = $(this).attr('id');
 

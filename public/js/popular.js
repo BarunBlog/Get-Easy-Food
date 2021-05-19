@@ -44,6 +44,10 @@ for(let element=0; element<ln; element++){
         button_elements[element].style.transform = `translateZ(20px)`;
 
     });
+    
+    inner_container_elements[element].addEventListener('touchstart', e => {
+        card_elements[element].style.transition = "all 0.5s ease";
+    });
 
     // Animate Out
     inner_container_elements[element].addEventListener('mouseleave', e => {
